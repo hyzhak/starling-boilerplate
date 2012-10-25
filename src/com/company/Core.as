@@ -1,9 +1,6 @@
 package com.company
 {
-	import feathers.controls.Button;
 	import feathers.controls.Label;
-	import feathers.controls.ScreenNavigator;
-	import feathers.motion.transitions.ScreenSlidingStackTransitionManager;
 	import feathers.skins.IFeathersTheme;
 	import feathers.themes.MetalWorksMobileTheme;
 	
@@ -12,8 +9,6 @@ package com.company
 	
 	public class Core extends Sprite
 	{
-		private var _label:Label;
-		
 		public function Core()
 		{
 			this.addEventListener(Event.ADDED_TO_STAGE, addedToStageHandler);
@@ -21,9 +16,7 @@ package com.company
 		
 		private var _theme:IFeathersTheme;
 		
-		private var _navigator:ScreenNavigator;
-		private var _transitionManager:ScreenSlidingStackTransitionManager;
-		private var _button:Button;
+		private var _label:Label;
 		
 		private function addedToStageHandler(event:Event):void
 		{
