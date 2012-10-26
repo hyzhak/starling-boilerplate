@@ -20,6 +20,8 @@ package com.company
 		
 		private function addedToStageHandler(event:Event):void
 		{
+			removeEventListener(Event.ADDED_TO_STAGE, addedToStageHandler);
+			
 			attachTheme();
 			
 			_label = new Label();
