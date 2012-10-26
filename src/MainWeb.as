@@ -46,7 +46,7 @@ package
 			Starling.handleLostContext = true;
 			Starling.multitouchEnabled = true;
 			
-			var MainType:Class = getDefinitionByName("com.company.Core") as Class;
+			var MainType:Class = getDefinitionByName("com.company.Main") as Class;
 			
 			_starling = new Starling(MainType, stage);
 			_starling.showStats = true;
